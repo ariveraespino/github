@@ -32,11 +32,11 @@ jobs:
     #-name: QA
     #run: nmp run test
       - name: Verificacion de Env
-        run: echo "DEPLY_BASE_URL -> $DEPLOY_BASE_URL"
+        run: echo "DEPOLY_BASE_URL -> $DEPLOY_BASE_URL"
       - name:  Compilar el sitio
         run: npm run build
       - name: Configurar entorno Github Pages
-        uses: action/configure-pages@v5
+        uses: actions/configure-pages@v5
       - name: Upload del Sitio Compilado
         uses: actions/upload-pages-artifact@v3
         with:
