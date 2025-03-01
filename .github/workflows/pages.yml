@@ -9,7 +9,7 @@ permissions:
   pages: write
   id-token: write
 env:
-  DEPLY-BASE.URL: ${{vars.DEPLY_BASE_URL}}
+  DEPLOY-BASE.URL: ${{vars.DEPLOY_BASE_URL}}
 concurrency:
   group: "pages"
   cancel-in-progress: true
